@@ -1,6 +1,6 @@
-# 🏦 CodeAlpha Advanced Banking Suite
+# 🏦 Advanced Banking Suite
 
-Welcome to the **CodeAlpha Advanced Banking Suite**, a high-fidelity, command-line mainframe application engineered to simulate a modern financial banking system. Developed by **Shaurya Tiwari**, this software leverages advanced C++ design patterns, true-color ANSI escape structures, typing animations, and robust file handling for persistent data storage.
+Welcome to the **Advanced Banking Suite**, a high-fidelity, command-line mainframe application engineered to simulate a modern financial banking system. Developed by **Shaurya Tiwari**, this software leverages advanced C++ design patterns, true-color ANSI escape structures, typing animations, and robust file handling for persistent data storage.
 
 ---
 
