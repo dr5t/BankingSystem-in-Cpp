@@ -1,24 +1,33 @@
 # Security Policy
 
-## Supported Versions
+This security policy outlines the safety configurations, data protection mechanisms, and vulnerability reporting procedures established for the **CodeAlpha Advanced Banking Suite**, maintained by **Shaurya Tiwari**.
 
-The following versions of the Banking System are currently supported with security updates:
+---
 
-| Version | Supported |
-| ------- | --------- |
-| 1.0.x   | Yes       |
-| < 1.0.0 | No        |
+## 🔒 Data Security Standards
 
-## Security Implementation Highlights
+The codebase implements strict controls to protect bank data and client credentials:
+1. **Password Protection**: Plain-text passwords are never stored in database files. Every password and transaction PIN is salted and hashed using **SHA-256** encryption before writes.
+2. **Masked Console Input**: POSIX termios configurations are adjusted during login to prevent passwords and transaction PINs from echoing on the screen. Inputs are visually replaced with masking symbols (`*`).
+3. **Field Validation**: Validation regex and character parsing are used on emails, phone numbers, and decimal numbers to block script injection or buffer corruption.
 
-To ensure secure console operations and robust file handling, this application incorporates:
-- **Hashing**: All passwords and transaction PINs are processed using a secure C++ implementation of the **SHA-256** cryptographic hashing algorithm before storage in files.
-- **PIN Masking**: Transaction PINs and sign-in passwords entered in the console are masked using terminal control functions (disabling terminal echo) so they are never visible on screen.
-- **Strict Validations**: Input sanitation prevents directory traversals, line injection into database files, and invalid formats for email and telephone entries.
+---
 
-## Reporting a Vulnerability
+## 📈 Supported Versions
 
-If you discover a security vulnerability in this project, please report it immediately:
-1. Open an issue on this repository labeled `security`, or contact the maintainer directly.
-2. Provide a clear description of the vulnerability, steps to reproduce, and potential impact.
-3. We will acknowledge receipt within 48 hours and coordinate a patch within 7 business days.
+Security updates are actively maintained for the following versions:
+
+| Version | Supported | Notes |
+| ------- | --------- | ----- |
+| 1.0.x   | Yes       | Active maintenance branch by Shaurya Tiwari |
+| < 1.0.0 | No        | Legacy prototypes |
+
+---
+
+## 🚨 Reporting a Vulnerability
+
+If you discover a security vulnerability or data exposure risk, please report it to Shaurya Tiwari:
+1. Go to the GitHub repository: **[dr5t/CodeAlpha-BankingSystem](https://github.com/dr5t/CodeAlpha-BankingSystem)**.
+2. Create a confidential issue or contact the developer directly at your registered email address.
+3. Provide details on the vulnerability, steps to reproduce, and possible impact.
+4. We aim to acknowledge receipt within 48 hours and release an official patch within 7 business days.
