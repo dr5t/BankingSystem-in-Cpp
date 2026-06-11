@@ -1,6 +1,6 @@
 # Security Policy
 
-This security policy outlines the safety configurations, data protection mechanisms, and vulnerability reporting procedures established for the **CodeAlpha Advanced Banking Suite**, maintained by **Shaurya Tiwari**.
+This security policy outlines the safety configurations, data protection mechanisms, and vulnerability reporting procedures established for the **Advanced Banking Suite**, maintained by **Shaurya Tiwari**.
 
 ---
 
@@ -27,7 +27,7 @@ Security updates are actively maintained for the following versions:
 ## 🚨 Reporting a Vulnerability
 
 If you discover a security vulnerability or data exposure risk, please report it to Shaurya Tiwari:
-1. Go to the GitHub repository: **[dr5t/CodeAlpha-BankingSystem](https://github.com/dr5t/CodeAlpha-BankingSystem)**.
+1. Go to the GitHub repository: **[dr5t/BankingSystem](https://github.com/dr5t/BankingSystem)**.
 2. Create a confidential issue or contact the developer directly at your registered email address.
 3. Provide details on the vulnerability, steps to reproduce, and possible impact.
 4. We aim to acknowledge receipt within 48 hours and release an official patch within 7 business days.
